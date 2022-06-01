@@ -1,7 +1,7 @@
 import discord
 import asyncio
 import random
-
+import os
 from discord.utils import get
 
 
@@ -52,5 +52,6 @@ async def on_message(message):
 
     if message.content =='/육사교가':
         await message.channel.send('동해수구비 감아 금수 내 조국유구 푸른 그 슬기 빛발을 돋혀풍진노도 헤쳐나갈 배움의 전당무쇠같이 뭉치어진 육사 불꽃은모진 역사 역역히 은보래치리아아 영용 영용인제 앞에도 한결 같아라온 누리 소리모아 부르네그 이름 그 이름 우리 육사아사달 기리 누려 여기 반만년변함없는 그 기상 하늘을 내쳐천추만리 바람곁은 이야기하리백사고쳐 쓰러져도 육사혼이야가고 오지 않으니 오질 않으니아아 영용 영용이제도 앞에도 한결 같아라온 누리 소리모아 부르네그 이름 그 이름 우리 육사 ')
-
-client.run("OTgwNDY2NzYyNzE1ODk3ODU2.G4cIPI.h5zrQ13EVA9lCaBlHXiHhHwa-XF7hGTUODlxOk")
+        
+access_token = os.environ["BOT_TOKEN"]
+client.run(access_token)
